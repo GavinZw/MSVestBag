@@ -20,7 +20,9 @@ Pod::Spec.new do |s|
 
   s.source_files  = "MSVestBag", "MSVestBag/MSVestBag/*"
   s.frameworks = 'Foundation', 'UIKit'
-  s.dependency = 'JPush', 'BmobSDK', 'SDWebImage'
+  s.dependency  'JPush'
+  s.dependency  'BmobSDK'
+  s.dependency  'SDWebImage'
 
   s.requires_arc          = true
 
