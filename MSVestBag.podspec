@@ -24,9 +24,6 @@ Pod::Spec.new do |s|
   s.dependency  'BmobSDK'
   s.dependency  'SDWebImage'
 
-  s.requires_arc          = true
-
-  s.description  = <<-DESC
-                   DESC
+  s.requires_arc  = true
 
 end
