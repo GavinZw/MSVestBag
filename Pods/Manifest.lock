@@ -1,0 +1,23 @@
+PODS:
+  - BmobSDK (2.1.5)
+  - JCore (1.1.1)
+  - JPush (3.0.2):
+    - JCore (= 1.1.1)
+  - SDWebImage (4.0.0):
+    - SDWebImage/Core (= 4.0.0)
+  - SDWebImage/Core (4.0.0)
+
+DEPENDENCIES:
+  - BmobSDK
+  - JPush
+  - SDWebImage
+
+SPEC CHECKSUMS:
+  BmobSDK: 9b4ae6d8de903affaee9703cf082f7f6b03ceba4
+  JCore: 2210a789c8efb7dc2a46b1c24d2209b995b18ad2
+  JPush: 5d53c88e32e48b559edc3adb20ade30903a5b9e1
+  SDWebImage: 76a6348bdc74eb5a55dd08a091ef298e56b55e41
+
+PODFILE CHECKSUM: 3aea55f23c85da5836e5ff91005dfaa0368ee8b8
+
+COCOAPODS: 1.2.0
