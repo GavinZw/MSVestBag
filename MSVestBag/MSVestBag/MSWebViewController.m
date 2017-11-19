@@ -12,7 +12,7 @@
 #import "MSWebViewController.h"
 #import "MSVestTabBar.h"
 
-#define MS_Exit exit(0)
+#define MS_EXIT exit(0)
 
 @interface MSWebViewController () <
   WKUIDelegate,
@@ -115,9 +115,9 @@
 }
 
 #pragma makr - UIAlertViewDelegate
-  
+
 - (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {
-  if (buttonIndex == 1) MS_Exit;
+  if (buttonIndex == 1) MS_EXIT;
 }
 
 @end

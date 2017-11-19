@@ -38,7 +38,7 @@
 
 @property (nonatomic, copy) NSString *launchScreenImageName;  /*当前使用壳工程的启动图片name .*/
 
-@property (nonatomic, copy) NSString *appleid;       /* 当前应用对于苹果商店包的Apple ID.*/
+@property (nonatomic, copy) NSString *appleid;       /* 当前应用对于苹果商店包的Apple ID. TODO:请保持设置的appleid 与Bmob一样.*/
 @property (nonatomic, copy) NSString *bmobClassName; /*对象名称（数据库表名可选的, Default: onestop */
   
 @end

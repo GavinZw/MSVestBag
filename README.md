@@ -12,12 +12,12 @@
 
     void registeredMain(void){
       MSVestBagConfigure *configure = [MSVestBagConfigure new];
-      configure.BmobAppKey = @"ee877Application";
-      configure.JPUSHServiceAppKey = @"ee877Application";
+      configure.BmobAppKey = @"a1658ab0e240583b13235b1e361f4bdc";
+      configure.JPUSHServiceAppKey = @"2277861fef5f3442c8c4ed91";
       configure.curDelegateClassName = NSStringFromClass([AppDelegate class]);
       configure.endTimeInterval = 153434134.99;
       configure.launchScreenImageName = @"launch.png";
-      configure.appleid = @"1314258";
+      configure.appleid = @"1292512095";
       configure.bmobClassName = @"onestop";
 
       [MSVestBagManage registeredVestBagManage:configure];
