@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		5429A47C9728C0873C2C6306 /* libPods-MSVestBag.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DEB0627CEB8CD241AF4B35DC /* libPods-MSVestBag.a */; };
+		86180E3C1FC07D7000613624 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 86180E3E1FC07D7000613624 /* InfoPlist.strings */; };
 		861BFE0F1FBFF24800A42C39 /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = 861BFE0E1FBFF24800A42C39 /* main.mm */; };
 		861BFE121FBFF24800A42C39 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 861BFE111FBFF24800A42C39 /* AppDelegate.m */; };
 		861BFE151FBFF24800A42C39 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 861BFE141FBFF24800A42C39 /* ViewController.m */; };
@@ -63,6 +64,11 @@
 		44C85314167DE0504AC2B896 /* Pods-MSVestBag.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MSVestBag.release.xcconfig"; path = "../Pods/Target Support Files/Pods-MSVestBag/Pods-MSVestBag.release.xcconfig"; sourceTree = "<group>"; };
 		6AA2B15A7AC6166DDA367CD9 /* Pods-MSVestBag.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MSVestBag.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-MSVestBag/Pods-MSVestBag.debug.xcconfig"; sourceTree = "<group>"; };
 		6ACFB67E47CAA9F008A6E51E /* Pods-MSVestBagExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MSVestBagExample.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-MSVestBagExample/Pods-MSVestBagExample.debug.xcconfig"; sourceTree = "<group>"; };
+		86180E3D1FC07D7000613624 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		86180E3F1FC07D7200613624 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		86180E401FC07DCD00613624 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
+		86180E411FC07DCD00613624 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		86180E421FC07DCD00613624 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		861BFE0B1FBFF24800A42C39 /* MSVestBagExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MSVestBagExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		861BFE0E1FBFF24800A42C39 /* main.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = main.mm; sourceTree = "<group>"; };
 		861BFE101FBFF24800A42C39 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -128,6 +134,7 @@
 				861BFE191FBFF24800A42C39 /* Assets.xcassets */,
 				861BFE1B1FBFF24800A42C39 /* LaunchScreen.storyboard */,
 				861BFE1E1FBFF24800A42C39 /* Info.plist */,
+				86180E3E1FC07D7000613624 /* InfoPlist.strings */,
 				861BFE0D1FBFF24800A42C39 /* Supporting Files */,
 			);
 			path = MSVestBagExample;
@@ -296,6 +303,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hans",
 			);
 			mainGroup = 869134E51FBF1DC8009BBA4C;
 			productRefGroup = 869134F01FBF1DC9009BBA4C /* Products */;
@@ -314,6 +322,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				861BFE1D1FBFF24800A42C39 /* LaunchScreen.storyboard in Resources */,
+				86180E3C1FC07D7000613624 /* InfoPlist.strings in Resources */,
 				861BFE1A1FBFF24800A42C39 /* Assets.xcassets in Resources */,
 				861BFE181FBFF24800A42C39 /* Main.storyboard in Resources */,
 			);
@@ -381,13 +390,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MSVestBag-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		E94898E6098840CB99D410FC /* [CP] Check Pods Manifest.lock */ = {
@@ -396,13 +408,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MSVestBagExample-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -443,10 +458,21 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		86180E3E1FC07D7000613624 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				86180E3D1FC07D7000613624 /* Base */,
+				86180E3F1FC07D7200613624 /* en */,
+				86180E421FC07DCD00613624 /* zh-Hans */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
 		861BFE161FBFF24800A42C39 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				861BFE171FBFF24800A42C39 /* Base */,
+				86180E401FC07DCD00613624 /* zh-Hans */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -455,6 +481,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				861BFE1C1FBFF24800A42C39 /* Base */,
+				86180E411FC07DCD00613624 /* zh-Hans */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -494,6 +521,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -545,6 +573,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";

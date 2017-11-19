@@ -8,22 +8,21 @@
 
 Pod::Spec.new do |s|
   s.name         = "MSVestBag"
-  s.version      = "0.0.1"
+  s.version      = "1.0.0"
   s.license      =  { :type => 'MIT', :file => 'LICENSE' }
   s.author       = { "gavin" => "lovegavin@outlook.com" }
   s.homepage     = "https://github.com/GavinZw"
   s.summary      = "A short description of MSVestBag."
 
-  s.ios.deployment_target = '8.0'
-  s.source       = { :git => 'https://github.com/GavinZw/MSVestBag', :tag => s.version }
-
-
+  s.source        = { :git => 'https://github.com/GavinZw/MSVestBag', :tag => s.version }
   s.source_files  = "MSVestBag", "MSVestBag/MSVestBag/*"
-  s.frameworks = 'Foundation', 'UIKit'
+  s.resources     = "MSVestBag/MSVestBag/Resources/vestimage.bundle"
+  s.frameworks    = 'Foundation', 'UIKit'
   s.dependency  'JPush'
   s.dependency  'BmobSDK'
   s.dependency  'SDWebImage'
 
   s.requires_arc  = true
+  s.ios.deployment_target = '8.0'
 
 end

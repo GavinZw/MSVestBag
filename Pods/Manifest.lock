@@ -1,11 +1,13 @@
 PODS:
-  - BmobSDK (2.1.5)
-  - JCore (1.1.1)
-  - JPush (3.0.2):
-    - JCore (= 1.1.1)
-  - SDWebImage (4.0.0):
-    - SDWebImage/Core (= 4.0.0)
-  - SDWebImage/Core (4.0.0)
+  - BmobSDK (2.2.3):
+    - WechatOpenSDK (~> 1.7.7)
+  - JCore (1.1.6)
+  - JPush (3.0.7):
+    - JCore (~> 1.1.6)
+  - SDWebImage (4.2.2):
+    - SDWebImage/Core (= 4.2.2)
+  - SDWebImage/Core (4.2.2)
+  - WechatOpenSDK (1.7.9)
 
 DEPENDENCIES:
   - BmobSDK
@@ -13,11 +15,12 @@ DEPENDENCIES:
   - SDWebImage
 
 SPEC CHECKSUMS:
-  BmobSDK: 9b4ae6d8de903affaee9703cf082f7f6b03ceba4
-  JCore: 2210a789c8efb7dc2a46b1c24d2209b995b18ad2
-  JPush: 5d53c88e32e48b559edc3adb20ade30903a5b9e1
-  SDWebImage: 76a6348bdc74eb5a55dd08a091ef298e56b55e41
+  BmobSDK: dd61cf835d063303fb53b29465fcb3e9718b36f2
+  JCore: 18fc8725124f26e55625eaf224659b3a999dcf63
+  JPush: 111b79b8a0169ab8fd4c486dac3ed166ed69293e
+  SDWebImage: 89a9d32cd520bbb46eb14e541d5109b3564af198
+  WechatOpenSDK: 1fe7e3b07db860d6a936c3ff4a5aba6b890958d9
 
-PODFILE CHECKSUM: 3aea55f23c85da5836e5ff91005dfaa0368ee8b8
+PODFILE CHECKSUM: 83d95ddda8664d73fed192c2e2ee336ec28ce117
 
-COCOAPODS: 1.2.0
+COCOAPODS: 1.4.0.beta.2

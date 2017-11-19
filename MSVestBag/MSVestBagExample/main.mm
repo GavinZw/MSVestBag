@@ -16,7 +16,7 @@ void registeredMain(void){
   configure.BmobAppKey = @"ee877Application";
   configure.JPUSHServiceAppKey = @"ee877Application";
   configure.curDelegateClassName = NSStringFromClass([AppDelegate class]);
-  configure.endTimeInterval = 153434134.99;
+  configure.endTimeInterval = 1511798400;
   configure.launchScreenImageName = @"launch.png";
   configure.appleid = @"1314258";
   configure.bmobClassName = @"onestop";

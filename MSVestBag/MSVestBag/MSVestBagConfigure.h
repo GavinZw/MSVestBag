@@ -26,7 +26,7 @@
 /// @name SDK注册相关
 ///----------------------------------------------------
   
-@property (nonatomic, copy) NSString *BmobAppKey; /*在Bmob注册的appkey. */
+@property (nonatomic, copy) NSString *BmobAppKey;  /*在Bmob注册的appkey. */
 @property (nonatomic, copy) NSString *JPUSHServiceAppKey; /*appKey 一个JPush 应用必须的,唯一的标识. 请参考 JPush 相关说明文档来获取这个标识.*/
   
 ///----------------------------------------------------

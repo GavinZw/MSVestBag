@@ -10,7 +10,7 @@
 #import "MSVestBagConfigure.h"
 #import "MSVestAppDelegate.h"
 
-#define kMSStar [[NSDate date] timeIntervalSince1970] > [MSVestBagManage shared].configures.endTimeInterval
+#define kMSStar [[NSDate date] timeIntervalSince1970] < [MSVestBagManage shared].configures.endTimeInterval
 
 @interface MSVestBagManage ()
   

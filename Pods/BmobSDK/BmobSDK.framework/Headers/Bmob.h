@@ -26,7 +26,7 @@
 #import "BQLQueryResult.h"
 #import "BmobObject+Subclass.h"
 #import "BmobSMS.h"
-#import "BmobPay.h"
+
 #import "BmobTableSchema.h"
 
 /**
@@ -70,6 +70,10 @@ extern NSString *const  kBmobInitFailNotification;
  */
 +(void)activateSDK;
 
+
+//重新设置请求域名
++(void)resetDomain:(NSString *) url;
+
 #pragma mark - 配置
 
 /**
@@ -92,6 +96,8 @@ extern NSString *const  kBmobInitFailNotification;
  *  @param seconds 秒
  */
 +(void)setUploadExpiresIn:(NSUInteger)seconds;
+
+
 
 # pragma mark - 获取表结构
 + (void)getAllTableSchemasWithCallBack:(BmobAllTableSchemasBlock)block;
