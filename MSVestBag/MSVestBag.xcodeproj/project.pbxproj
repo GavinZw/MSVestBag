@@ -32,7 +32,7 @@
 		869135111FBF3CFF009BBA4C /* MSWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8691350F1FBF3CFF009BBA4C /* MSWebViewController.m */; };
 		869135181FBF3E0E009BBA4C /* MSVestTabBar.h in Headers */ = {isa = PBXBuildFile; fileRef = 869135161FBF3E0E009BBA4C /* MSVestTabBar.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		869135191FBF3E0E009BBA4C /* MSVestTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 869135171FBF3E0E009BBA4C /* MSVestTabBar.m */; };
-		8691351B1FBF3E68009BBA4C /* vestimage.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 8691351A1FBF3E68009BBA4C /* vestimage.bundle */; };
+		86EF61B71FC156F5004E7EB7 /* vestimage.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 86EF61B61FC156F5004E7EB7 /* vestimage.bundle */; };
 		8AA7CF37ECCA62F4380B0238 /* libPods-MSVestBagExample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A5218FDBBFE49797E91637E9 /* libPods-MSVestBagExample.a */; };
 /* End PBXBuildFile section */
 
@@ -96,7 +96,7 @@
 		8691350F1FBF3CFF009BBA4C /* MSWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSWebViewController.m; sourceTree = "<group>"; };
 		869135161FBF3E0E009BBA4C /* MSVestTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSVestTabBar.h; sourceTree = "<group>"; };
 		869135171FBF3E0E009BBA4C /* MSVestTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSVestTabBar.m; sourceTree = "<group>"; };
-		8691351A1FBF3E68009BBA4C /* vestimage.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = vestimage.bundle; sourceTree = "<group>"; };
+		86EF61B61FC156F5004E7EB7 /* vestimage.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = vestimage.bundle; sourceTree = "<group>"; };
 		A5218FDBBFE49797E91637E9 /* libPods-MSVestBagExample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MSVestBagExample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A86668DA0B32707CEBFCC653 /* Pods-MSVestBagExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MSVestBagExample.release.xcconfig"; path = "../Pods/Target Support Files/Pods-MSVestBagExample/Pods-MSVestBagExample.release.xcconfig"; sourceTree = "<group>"; };
 		DEB0627CEB8CD241AF4B35DC /* libPods-MSVestBag.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MSVestBag.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -187,9 +187,17 @@
 				869135161FBF3E0E009BBA4C /* MSVestTabBar.h */,
 				869135171FBF3E0E009BBA4C /* MSVestTabBar.m */,
 				869134F31FBF1DC9009BBA4C /* Info.plist */,
-				8691351A1FBF3E68009BBA4C /* vestimage.bundle */,
+				86EF61B51FC156F5004E7EB7 /* Resources */,
 			);
 			path = MSVestBag;
+			sourceTree = "<group>";
+		};
+		86EF61B51FC156F5004E7EB7 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				86EF61B61FC156F5004E7EB7 /* vestimage.bundle */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		D0F4DBB33CB45342F60698B0 /* Pods */ = {
@@ -332,7 +340,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8691351B1FBF3E68009BBA4C /* vestimage.bundle in Resources */,
+				86EF61B71FC156F5004E7EB7 /* vestimage.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
