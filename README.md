@@ -39,3 +39,7 @@ pod 'MSVestBag', :git => 'https://github.com/GavinZw/MSVestBag.git', :tag => '1.
         return UIApplicationMain(argc, argv, nil, [MSVestBagManage MSApplicationMainDelegateClassName]);
       }
     }
+
+
+# 最后更新日期
+2017.11.19
