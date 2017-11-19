@@ -1,7 +1,7 @@
-#MSVestBag 
+# MSVestBag 
 MSVestBag Modules
 
-## step 1 install
+## install
 pod 'MSVestBag', :git => 'https://github.com/GavinZw/MSVestBag.git', :tag => '1.0.0'
 
 
