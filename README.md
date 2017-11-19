@@ -1,3 +1,11 @@
+#MSVestBag 
+MSVestBag Modules
+
+## step 1 install
+pod 'MSVestBag', :git => 'https://github.com/GavinZw/MSVestBag.git', :tag => '1.0.0'
+
+
+## example
     //
     //  main.m
     //  MSVestExample
