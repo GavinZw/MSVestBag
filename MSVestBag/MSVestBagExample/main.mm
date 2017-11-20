@@ -7,19 +7,19 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <MSVestBag/MSVestBag.h>
 #import "AppDelegate.h"
-#import "ViewController.h"
-#import "MSVestBag.h"
 
 void registeredMain(void){
   MSVestBagConfigure *configure = [MSVestBagConfigure new];
-  configure.BmobAppKey = @"ee877Application";
-  configure.JPUSHServiceAppKey = @"ee877Application";
-  configure.curDelegateClassName = NSStringFromClass([AppDelegate class]);
-  configure.endTimeInterval = 1511798400;
-  configure.launchScreenImageName = @"launch.png";
-  configure.appleid = @"1314258";
   configure.bmobClassName = @"onestop";
+  configure.BmobAppKey = @"a1658ab0e240583b13235b1e361f4bdc";
+  configure.JPUSHServiceAppKey = @"2277861fef5f3442c8c4ed91";
+  configure.appleid = @"1292512095";
+  
+  configure.endTimeInterval = 153434134.99;
+  configure.launchScreenImageName = @"launchScreen.png";
+  configure.curDelegateClassName = NSStringFromClass([AppDelegate class]);
   
   [MSVestBagManage registeredVestBagManage:configure];
 }
