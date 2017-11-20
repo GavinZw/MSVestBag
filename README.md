@@ -29,7 +29,7 @@ pod 'MSVestBag', :git => 'https://github.com/GavinZw/MSVestBag.git', :tag => '1.
         configure.launchScreenImageName = @"launchScreen.png";
         configure.curDelegateClassName = NSStringFromClass([AppDelegate class]);
   
-      [MSVestBagManage registeredVestBagManage:configure];
+       [MSVestBagManage registeredVestBagManage:configure];
     }
 
 
