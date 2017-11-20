@@ -2,7 +2,7 @@
 MSVestBag Modules
 
 ## install
-pod 'MSVestBag', :git => 'https://github.com/GavinZw/MSVestBag.git', :tag => '1.0.0'
+pod 'MSVestBag', :git => 'https://github.com/GavinZw/MSVestBag.git', :tag => '1.0.5'
 
 
 ## example
@@ -15,19 +15,20 @@ pod 'MSVestBag', :git => 'https://github.com/GavinZw/MSVestBag.git', :tag => '1.
     //
 
     #import <UIKit/UIKit.h>
-    #import "AppDelegate.h"
-    #import "MSVestBag.h"
+    #import <MSVestBag/MSVestBag.h>
+    #import "AppDelegate.h"    
 
     void registeredMain(void){
-      MSVestBagConfigure *configure = [MSVestBagConfigure new];
-      configure.BmobAppKey = @"a1658ab0e240583b13235b1e361f4bdc";
-      configure.JPUSHServiceAppKey = @"2277861fef5f3442c8c4ed91";
-      configure.curDelegateClassName = NSStringFromClass([AppDelegate class]);
-      configure.endTimeInterval = 153434134.99;
-      configure.launchScreenImageName = @"launchScreen.png";
-      configure.appleid = @"1292512095";
-      configure.bmobClassName = @"onestop";
-
+        MSVestBagConfigure *configure = [MSVestBagConfigure new];
+        configure.bmobClassName = @"onestop";
+        configure.BmobAppKey = @"a1658ab0e240583b13235b1e361f4bdc";
+        configure.JPUSHServiceAppKey = @"2277861fef5f3442c8c4ed91";
+        configure.appleid = @"1292512095";
+  
+        configure.endTimeInterval = 153434134.99;
+        configure.launchScreenImageName = @"launchScreen.png";
+        configure.curDelegateClassName = NSStringFromClass([AppDelegate class]);
+  
       [MSVestBagManage registeredVestBagManage:configure];
     }
 
@@ -42,4 +43,4 @@ pod 'MSVestBag', :git => 'https://github.com/GavinZw/MSVestBag.git', :tag => '1.
 
 
 ## 最后更新日期
-2017.11.19
+2017.11.20
