@@ -35,8 +35,8 @@ pod 'MSVestBag', :git => 'https://github.com/GavinZw/MSVestBag.git', :tag => '1.
 
     int main(int argc, char * argv[]) {
       @autoreleasepool {
-
-        MSRegisteredAppDelegate();
+                
+        MSRegisteredAppDelegate(); // registered        
         return UIApplicationMain(argc, argv, nil, [MSVestBagManage MSApplicationMainDelegateClassName]);
       }
     }
