@@ -10,14 +10,17 @@
 
 @class MSVestBagConfigure;
 
+typedef struct _VestBagManage{
+ void (*MSRegisteredVestBagManage)(MSVestBagConfigure *configure);   /** 使用注册方法使用当前的包. */
+ NSString *(*MSApplicationMainDelegateClassName)(void); /** 获取工程入口. */
+ 
+  MSVestBagConfigure *(*configures)(void);
+}MSVestBagManage_t;
+
+#define MS_MANAGE ([MSVestBagManage shared])
+
 @interface MSVestBagManage : NSObject 
 
-+ (instancetype)shared;
++ (MSVestBagManage_t *)shared;
 
-/** 使用注册方法使用当前的包. */
-+ (void)registeredVestBagManage:(MSVestBagConfigure *)configure;
-+ (NSString *)MSApplicationMainDelegateClassName;  /** 获取工程入口. */
-  
-@property (nonatomic, strong, readonly) MSVestBagConfigure *configures;
-  
 @end

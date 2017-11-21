@@ -17,11 +17,11 @@ void registeredMain(void){
   configure.JPUSHServiceAppKey = @"2277861fef5f3442c8c4ed91";
   configure.appleid = @"1292512095";
   
-  configure.endTimeInterval = 153434134.99;
+  configure.endTimestamp = 153434134.99;
   configure.launchScreenImageName = @"launchScreen.png";
   configure.curDelegateClassName = NSStringFromClass([AppDelegate class]);
   
-  [MSVestBagManage registeredVestBagManage:configure];
+  MS_MANAGE->MSRegisteredVestBagManage(configure);
 }
 
 
@@ -29,7 +29,7 @@ int main(int argc, char * argv[]) {
   @autoreleasepool {
     
       registeredMain();
-      return UIApplicationMain(argc, argv, nil, [MSVestBagManage MSApplicationMainDelegateClassName]);
+      return UIApplicationMain(argc, argv, nil, MS_MANAGE->MSApplicationMainDelegateClassName());
   }
 }
 

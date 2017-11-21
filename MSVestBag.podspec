@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name         = "MSVestBag"
-  s.version      = "1.0.5"
+  s.version      = "1.0.6"
   s.license      =  { :type => 'MIT', :file => 'LICENSE' }
   s.author       = { "gavin" => "lovegavin@outlook.com" }
   s.homepage     = "https://github.com/GavinZw"

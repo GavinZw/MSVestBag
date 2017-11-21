@@ -36,7 +36,7 @@ __weak static MSVestBagConfigure *_configure = nil;
     [super viewDidLoad];
     // Do any additional setup after loading the view.
   
-  _configure = [MSVestBagManage shared].configures;
+  _configure = MS_MANAGE->configures();
   [self.navigationController setNavigationBarHidden:YES animated:NO];
   
   // 设置启动图

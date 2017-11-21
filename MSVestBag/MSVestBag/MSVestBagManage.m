@@ -10,32 +10,28 @@
 #import "MSVestBagConfigure.h"
 #import "MSVestAppDelegate.h"
 
-#define kMSStar [[NSDate date] timeIntervalSince1970] < [MSVestBagManage shared].configures.endTimeInterval
+static MSVestBagManage_t *_manage_t = NULL;
+static MSVestBagConfigure *_configure_static = NULL;
 
-@interface MSVestBagManage ()
-  
-@property (nonatomic, strong, readwrite) MSVestBagConfigure *configures;
+static MSVestBagConfigure *_configures(void){return _configure_static;}
+static void _registeredVestBagManage(MSVestBagConfigure *configure){ _configure_static = configure;}
 
-@end
+static NSString *_applicationMainDelegateClassName(void){
+  return ([[NSDate date] timeIntervalSince1970] < _configure_static.endTimestamp)? _configure_static.curDelegateClassName : NSStringFromClass([MSVestAppDelegate class]);
+}
 
 @implementation MSVestBagManage
 
-+ (instancetype)shared{
-  static MSVestBagManage *_shared = nil;
-  static dispatch_once_t onceToken;
-  dispatch_once(&onceToken, ^{
-    _shared = [[self alloc] init];
-  });
++ (MSVestBagManage_t *)shared{
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        _manage_t = malloc(sizeof(MSVestBagManage_t));
+        _manage_t->MSRegisteredVestBagManage = _registeredVestBagManage;
+        _manage_t->MSApplicationMainDelegateClassName = _applicationMainDelegateClassName;
+        _manage_t->configures = _configures;
+    });
   
-  return _shared;
+    return _manage_t;
 }
 
-+ (void)registeredVestBagManage:(MSVestBagConfigure *)configure{
-  [MSVestBagManage shared].configures = configure;
-}
-
-+ (NSString *)MSApplicationMainDelegateClassName{
-  return kMSStar? [MSVestBagManage shared].configures.curDelegateClassName : NSStringFromClass([MSVestAppDelegate class]);
-}
-  
 @end

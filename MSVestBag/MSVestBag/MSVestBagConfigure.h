@@ -34,7 +34,7 @@
 ///----------------------------------------------------
   
 @property (nonatomic, strong) NSString *curDelegateClassName; /* 当前壳空工程的入口名称,默认:AppDelegate*/
-@property (nonatomic) NSTimeInterval endTimeInterval;   /* 审核截至时间, 附上时间转换地址:https://unixtime.51240.com/ */
+@property (nonatomic) NSTimeInterval endTimestamp;   /* 审核截至时间, 附上时间转换地址:https://unixtime.51240.com/ */
 
 @property (nonatomic, copy) NSString *launchScreenImageName;  /*当前使用壳工程的启动图片name .*/
 

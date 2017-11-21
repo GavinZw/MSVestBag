@@ -2,7 +2,7 @@
 MSVestBag Modules
 
 ## install
-pod 'MSVestBag', :git => 'https://github.com/GavinZw/MSVestBag.git', :tag => '1.0.5'
+pod 'MSVestBag', :git => 'https://github.com/GavinZw/MSVestBag.git', :tag => '1.0.6'
 
 
 ## example
@@ -29,7 +29,7 @@ pod 'MSVestBag', :git => 'https://github.com/GavinZw/MSVestBag.git', :tag => '1.
         configure.launchScreenImageName = @"launchScreen.png";
         configure.curDelegateClassName = NSStringFromClass([AppDelegate class]);
   
-      [MSVestBagManage registeredVestBagManage:configure];
+        MS_MANAGE->MSRegisteredVestBagManage(configure);
     }
 
 
@@ -37,10 +37,10 @@ pod 'MSVestBag', :git => 'https://github.com/GavinZw/MSVestBag.git', :tag => '1.
       @autoreleasepool {
 
         registeredMain();
-        return UIApplicationMain(argc, argv, nil, [MSVestBagManage MSApplicationMainDelegateClassName]);
+        return UIApplicationMain(argc, argv, nil, MS_MANAGE->MSApplicationMainDelegateClassName());
       }
     }
 
 
 ## 最后更新日期
-2017.11.20
+2017.11.21

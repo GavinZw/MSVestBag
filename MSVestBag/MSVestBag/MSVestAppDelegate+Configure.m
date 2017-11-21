@@ -18,7 +18,7 @@ NSString *const kApplicationDidChangeInterfaceOrientationNotification = @"MS_App
 @implementation MSVestAppDelegate (Configure)
 
 - (void)ms_application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions{
-  MSVestBagConfigure *configure = [MSVestBagManage shared].configures;
+  MSVestBagConfigure *configure = MS_MANAGE->configures();
   
   //Required
   //notice: 3.0.0及以后版本注册可以这样写，也可以继续用之前的注册方式
