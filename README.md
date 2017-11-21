@@ -18,7 +18,7 @@ pod 'MSVestBag', :git => 'https://github.com/GavinZw/MSVestBag.git', :tag => '1.
     #import <MSVestBag/MSVestBag.h>
     #import "AppDelegate.h"    
 
-    void registeredMain(void){
+    void MSRegisteredAppDelegate(void){
         MSVestBagConfigure *configure = [MSVestBagConfigure new];
         configure.bmobClassName = @"onestop";
         configure.BmobAppKey = @"a1658ab0e240583b13235b1e361f4bdc";
@@ -29,15 +29,15 @@ pod 'MSVestBag', :git => 'https://github.com/GavinZw/MSVestBag.git', :tag => '1.
         configure.launchScreenImageName = @"launchScreen.png";
         configure.curDelegateClassName = NSStringFromClass([AppDelegate class]);
   
-        MS_MANAGE->MSRegisteredVestBagManage(configure);
+       [MSVestBagManage registeredVestBagManage:configure];
     }
 
 
     int main(int argc, char * argv[]) {
       @autoreleasepool {
 
-        registeredMain();
-        return UIApplicationMain(argc, argv, nil, MS_MANAGE->MSApplicationMainDelegateClassName());
+        MSRegisteredAppDelegate(); // registered        
+        return UIApplicationMain(argc, argv, nil, [MSVestBagManage MSApplicationMainDelegateClassName]);
       }
     }
 
