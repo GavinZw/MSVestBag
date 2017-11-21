@@ -25,7 +25,7 @@ pod 'MSVestBag', :git => 'https://github.com/GavinZw/MSVestBag.git', :tag => '1.
         configure.JPUSHServiceAppKey = @"2277861fef5f3442c8c4ed91";
         configure.appleid = @"1292512095";
   
-        configure.endTimeInterval = 153434134.99;
+        configure.endTimestamp = 153434134.99;
         configure.launchScreenImageName = @"launchScreen.png";
         configure.curDelegateClassName = NSStringFromClass([AppDelegate class]);
   
